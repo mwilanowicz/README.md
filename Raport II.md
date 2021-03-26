@@ -1,3 +1,4 @@
+Raport II. Marcel Wilanowicz. Data: 26.03.2021.
 Zaczalem od zaimportowania biblioteki pygame(niezbednej do korzystania z funkcji i modulow creatora gry) i os(niezbednej do wczytywania plików/obrazów ze ścieżki).
 Wstawiłem funkcje pygame.init(), która inicjuje wszystkie moduly niezbedne dla PyGame(forma zabezpieczenia oraz zaoszczędzenia czasu na ewentualnej inicjalizacji modułów).
 Utworzyłem okno gry z tytułem "Geometry Crash" o rozdzielczości 600x600 pikseli.
