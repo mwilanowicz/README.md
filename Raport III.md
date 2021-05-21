@@ -1,0 +1,10 @@
+Raport III. Marcel Wilanowicz. Data 21.05.2021.
+
+Największe zmiany nastąpiły w menu gry. Napisałem funkcję menu(death), która renderuje mi okno menu gry w 2 stanach(kiedy gracz dopiero zaczął grać oraz kiedy przegrał i wrócił do menu).
+Funkcja ma podobną strukturę do funkcji main(), wykonuje się non-stop w pętli, zczytuje tło oraz renderuje napisy oraz aktualny rekord. W kwestii loga gry skorzystałem z darmowego generatora napisów: https://cooltext.com/Logo-Design-Neon.
+Dodadtkowo żeby osiągnąć "neonowy efekt" zadeklarowałem zmienne red, green, blue, które co każdą klatkę generują losowy kolor RGB. W menu() stworzyłem prowizoryczne przyciski. Zczytałem z napisów (start, options, exit) współrzędne kolizji, które wraz z
+wspolrzednymi kursora myszki(pygame.mouse.get_pos()) odziałują ze sobą. W momencie kliknięcią myszką w miejsu kolizji tych dwóch obiektów otrzymuje stan "kliknięcia", w którym w zależności od rodzaju przycisku wywołuje mi "główną" grę, opcje(wybór postaci) albo zamyka grę.
+Drugą funkcję, jaką zadeklarowałem jest options(). Strukturalnie opiera się ona na tej samej zasadzie, co funkcja menu(). Dodatkowo zawiera ona "przyciski postaci", które w momemncie, gdy się na nie kliknie, podmieniają wartość zmiennej globalnej HERO. W ten sposób gracz może wybrać
+postać, którą zamierza grać. W celach wizualnych dodałem do głownej gry drugą warstwę półprzezroczystego tła, które działa na tej samej zasadzie co pierwsze, lecz jest umiejscowione niżej na ekranie(podłoga po której postać się przemiescza). Poprawiłem też nieco mechanikę gry.
+W momencie, gdy gracz ma kolizję z przeszkodą, czas zwalnia, żeby gracz mógł zauważyć co się stało oraz po przegranej wraca do menu głownego. Dodatkowo na postaci w momencie kolizji renderuje się tekstura "krwi", która zczytuje aktualne współrzędne kolizji postaci i na jej miejsce nakłada się.
+Pozostaje mi już tylko dopracować dokładność kolizji, aby gra była bardziej intuicyjna oraz aktualizacja aktualnego rekordu gracza.(Szukam sposobu, gdzie mógłbym przechowywać tę informację oraz zczytywać ją w momencie odpalenia gry).
