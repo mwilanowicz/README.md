@@ -1,0 +1,12 @@
+https://www.nexusmods.com/darksouls2/mods/513 ~ napis "YOU DIED"
+https://cooltext.com/Logo-Design-Neon ~ Generator loga gry
+https://www.vexels.com/png-svg/preview/151590/blood-splatter-flat ~ Tekstura krwi(wczesniejsza)
+https://geometry-dash.fandom.com/wiki/Level_Components ~ Icony postaci, kolce(gra ta była dla mnie inspiracją)
+http://cliparts.co/blood-splatter-png ~ Tekstura krwi(obecna)
+https://commons.wikimedia.org/wiki/File:Invisible_Square.svg ~ Niewidzialny kwadrat(domyslnie 600x600px), potrzebny do kolizji
+https://wallpaperscraft.com/download/structure_lines_geometry_141501/2560x1080 ~ Tekstura tla gry
+
+Biblioteki:
+~ pygame
+~ os
+~ random
